@@ -26,7 +26,6 @@ DotLedger.module('Views.Statements', function () {
     save: function () {
       var data, files;
       this.ui.button.button('loading');
-
       // FIXME: this is a bit hacky
       data = new window.FormData();
       files = this.ui.file[0].files;
@@ -35,6 +34,8 @@ DotLedger.module('Views.Statements', function () {
       }
 
       data.append('account_id', this.options.account.get('id'));
+      data.append('balance', document.querySelector('#balance').value,)
+      data.append('file_type', document.querySelector('#file_type').value,)
 
       $.ajax({
         url: '/api/statements',
