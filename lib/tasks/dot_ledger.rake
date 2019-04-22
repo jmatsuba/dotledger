@@ -94,7 +94,7 @@ namespace :dot_ledger do
           "Insurance",
           "Repairs & Maintenance",
           "Property Taxes"
-        ]
+        ],
         'Personal Expenses' => [
           'Bank Charges',
           'Cell Phone',
