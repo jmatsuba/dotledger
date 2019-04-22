@@ -141,6 +141,7 @@ namespace :dot_ledger do
 
       categories.each do |type, names|
         names.each do |name|
+          puts names
           Category.create!(type: type, name: name)
         end
       end
