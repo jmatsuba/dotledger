@@ -26,6 +26,11 @@ gem 'responders', '~> 2.0'
 
 gem 'puma'
 
+group :production do
+  gem 'rails_12factor'
+end
+
+
 group :development, :test do
   gem 'capybara'
   gem 'database_cleaner'
