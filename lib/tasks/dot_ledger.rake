@@ -102,7 +102,7 @@ namespace :dot_ledger do
           'Loan Interest',
           'Education',
           'Groceries',
-          'House - Cleaning'
+          'House - Cleaning',
           'Housing - Rent',
           'Housing - Furniture',
           'Housing - Maintenance',
@@ -127,10 +127,10 @@ namespace :dot_ledger do
           'Running - Shoes',
           'Running - Races and Events',
           'Running - Travel',
-          'Skiing/Snowboarding - Gear'
-          'Skiing/Snowboarding - Lift Tickets & Passes'
-          'Skiing/Snowboarding - Safety Gear'
-          'Vacation - Travel'
+          'Skiing/Snowboarding - Gear',
+          'Skiing/Snowboarding - Lift Tickets & Passes',
+          'Skiing/Snowboarding - Safety Gear',
+          'Vacation - Travel',
           'Vacation - Hotels'
         ],
         'Income' => [
