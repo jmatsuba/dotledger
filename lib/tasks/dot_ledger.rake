@@ -85,17 +85,26 @@ namespace :dot_ledger do
     desc 'Create seed categories'
     task categories: :environment do
       categories = {
-        'Kelly Ave' => [
-          "Hosting Fees",
-          "AirBnB Fees"
+        'Flexible' => [
+          'Transport - Taxi',
+          'Transport - Car Share',
+          'Motor Vehicles - Gas (Trips)',
+          'Transport - Taxi',
+          'Transport - Car Share',
+          'Cash Withdrawals',
+          'Restaurants - Eating Out',
+          'Restaurants - Take Out',
+          'Entertainment - Movies',
+          'Entertainment - Live Shows',
+          'Running - Races and Events',
+          'Running - Travel',
+          'Skiing/Snowboarding - Gear',
+          'Skiing/Snowboarding - Lift Tickets & Passes',
+          'Skiing/Snowboarding - Safety Gear',
+          'Vacation - Travel',
+          'Vacation - Hotels'
         ],
-        'Edmonton Condo' => [
-          "Strata Fees",
-          "Insurance",
-          "Repairs & Maintenance",
-          "Property Taxes"
-        ],
-        'Personal Expenses' => [
+        'Essential' => [
           'Bank Charges',
           'Cell Phone',
           'Bank Fees',
@@ -109,29 +118,14 @@ namespace :dot_ledger do
           'Medical & Dental',
           'Motor Vehicles - Insurance',
           'Motor Vehicles - Gas (Day to Day)',
-          'Motor Vehicles - Gas (Trips)',
           'Transport - Public Transit',
-          'Transport - Taxi',
-          'Transport - Car Share',
           'Property Tax',
-          'Cash Withdrawals',
           'Clothing',
-          'Restaurants - Eating Out',
-          'Restaurants - Take Out',
-          'Entertainment - Movies',
-          'Entertainment - Live Shows',
           'General/Misc',
           'Gifts',
-          'Holidays',
           'Personal Care & Fitness',
           'Running - Shoes',
-          'Running - Races and Events',
-          'Running - Travel',
-          'Skiing/Snowboarding - Gear',
-          'Skiing/Snowboarding - Lift Tickets & Passes',
-          'Skiing/Snowboarding - Safety Gear',
-          'Vacation - Travel',
-          'Vacation - Hotels'
+
         ],
         'Income' => [
           'Interest',
