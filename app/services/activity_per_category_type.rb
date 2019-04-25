@@ -12,9 +12,11 @@ class ActivityPerCategoryType
   end
 
   def activity_per_category_type
-    query.map do |row|
+    a = query.map do |row|
       CategoryTypeActivity.new(row.attributes.except('id'))
     end
+    #Transfers are not real expenses.
+    a.reject { |n| n.type == "Transfer" }
   end
 
   def total_spent

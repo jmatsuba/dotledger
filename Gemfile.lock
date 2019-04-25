@@ -228,6 +228,7 @@ DEPENDENCIES
   ofx
   pg
   poltergeist
+  pry
   pry-rails
   puma
   quiet_assets
