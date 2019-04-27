@@ -20,8 +20,11 @@ module Api
 
     def create
       @account = Account.find(account_id)
-
-      @statement_creator = StatementCreator.new(account: @account, file: file, balance: params[:balance], file_type: params[:file_type] )
+      if params[:file_type] == 'pc-financial-csv'
+        @statement_creator = StatementCreator.new(account: @account, file: file, balance: params[:balance], file_type: params[:file_type] )
+      elsif params[:file_type] == 'ofx'
+        @statement_creator = OfxStatementCreator.new(account: @account, file: file )
+      end
 
       @statement_creator.save
 
